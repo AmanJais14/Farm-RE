@@ -13,7 +13,7 @@ const InvestmentLandscape = ({ activeCard, setActiveCard }) => {
     },
     {
       category: 'Exotic Farming',
-      capitalAppreciation: { min: 10, max: 12, avg: 12 },
+      capitalAppreciation: { min: 8, max: 12, avg: 12 },
       dividends: { min: 12, max: 18, avg: 16, special: '16%+ ' },
       totalRange: '26-30%',
       capitalColor: 'bg-gradient-to-r from-emerald-400 to-emerald-600',

@@ -30,7 +30,7 @@ const CollapsibleSections = ({ activeCard, setActiveCard, counters }) => {
         />
 
         {/* CAGR Growth Section */}
-        <CAGRGrowth />
+        {/* <CAGRGrowth /> */}
 
         {/* Investment Overview Section */}
         <InvestmentOverview

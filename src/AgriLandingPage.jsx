@@ -34,6 +34,9 @@ import InviteFriend from "./components/InviteFriend/InviteFriend";
 import FloatingActionButton from "./components/FloatingActionButton/FloatingActionButton";
 import GalleryModal from "./components/Gallery/GalleryModal";
 import AnimatedCounters from "./components/common/AnimatedCounters";
+import SalesChannel from "./components/SalesChannel/SalesChannel";
+import OurInvestors from "./components/OurInvestors/OurInvestors";
+import OurVision from "./components/OurVision/OurVision";
 
 // Import assets
 import farm from "./assets/farm.jpg";
@@ -1017,6 +1020,12 @@ const AgriLandingPage = () => {
             </div>
           </section>
 
+          {/* Our Sales Channel Section */}
+          <SalesChannel />
+
+          {/* Our Investors Section */}
+          <OurInvestors />
+
           {/* About Me Section */}
           <AboutMe />
 
@@ -1045,7 +1054,7 @@ const AgriLandingPage = () => {
                 {testimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="card-premium group bg-white p-6 rounded-3xl shadow-lg border border-neutral-100 hover:shadow-premium relative overflow-hidden animate-scale-in flex flex-col h-90"
+                    className="card-premium group bg-white p-6 rounded-3xl shadow-lg border border-neutral-100 hover:shadow-premium relative overflow-hidden animate-scale-in flex flex-col h-45"
                     style={{ animationDelay: `${index * 200}ms` }}
                   >
                     {/* Decorative Element */}
@@ -1063,14 +1072,16 @@ const AgriLandingPage = () => {
                     </div>
 
                     {/* Quote */}
-                    <div className="relative z-10 mb-4 flex-1">
-                      <div className="text-4xl text-primary-200 font-bold absolute -top-2 -left-1">
+                    <div className="relative z-10 mb-4 flex-1 overflow-hidden">
+                      <div className="text-4xl text-primary-200 font-bold absolute -top-2 -left-1 z-20">
                         "
                       </div>
-                      <p className="text-neutral-700 text-sm font-medium leading-relaxed pl-6 text-left">
-                        {testimonial.quote}
-                      </p>
-                      <div className="text-4xl text-primary-200 font-bold absolute -bottom-4 -right-1 rotate-180">
+                      <div className="h-24 overflow-y-auto scrollbar-thin scrollbar-thumb-green-300 scrollbar-track-green-100 pr-2">
+                        <p className="text-neutral-700 text-sm font-medium leading-relaxed pl-6 text-left">
+                          {testimonial.quote}
+                        </p>
+                      </div>
+                      <div className="text-4xl text-primary-200 font-bold absolute -bottom-4 -right-1 rotate-180 z-20">
                         "
                       </div>
                     </div>
@@ -1183,6 +1194,9 @@ const AgriLandingPage = () => {
               {/* </div> */}
             </div>
           </section>
+
+          {/* Our Vision Section */}
+          <OurVision />
 
           {/* Invite a Friend Section */}
           {/* <InviteFriend /> */}
@@ -1620,10 +1634,10 @@ const AgriLandingPage = () => {
                 <Users className="w-4 h-4 text-white" />
                 <span className="text-sm">50+ Investors</span>
               </div> */}
-                  <div className="flex items-center gap-2">
+                  {/* <div className="flex items-center gap-2">
                     <Star className="w-4 h-4 text-white" />
                     <span className="text-sm">IIM Alumni Led</span>
-                  </div>
+                  </div> */}
                 </div>
 
                 <div className="border-t border-neutral-700 pt-6">

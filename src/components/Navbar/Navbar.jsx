@@ -48,6 +48,20 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const handleVisionClick = () => {
+    // Only scroll if we're on the home page
+    if (location.pathname === '/') {
+      scrollToSection('our-vision');
+    } else {
+      // Navigate to home page first, then scroll
+      navigate('/');
+      setTimeout(() => {
+        scrollToSection('our-vision');
+      }, 100);
+    }
+    setIsOpen(false);
+  };
+
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
       isScrolled 
@@ -74,6 +88,13 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center gap-4 lg:gap-6">
+            <button
+              onClick={handleVisionClick}
+              className="text-green-700 hover:bg-green-50 hover:text-green-800 px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-300"
+            >
+              Our Vision
+            </button>
+
             <button
               onClick={handleBlogClick}
               className={`flex items-center gap-2 px-4 py-2 rounded-xl font-semibold text-sm transition-all duration-300 ${
@@ -120,6 +141,13 @@ const Navbar = () => {
         }`}>
           <div className="bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-green-100 p-4 mt-2">
             <div className="space-y-3">
+              <button
+                onClick={handleVisionClick}
+                className="w-full flex items-center gap-3 px-4 py-3 bg-white hover:bg-green-50 text-green-700 border-2 border-green-200 hover:border-green-300 rounded-xl font-semibold text-sm transition-all duration-300"
+              >
+                Our Vision
+              </button>
+
               <button
                 onClick={handleBlogClick}
                 className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl font-semibold text-sm transition-all duration-300 ${

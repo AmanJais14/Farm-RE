@@ -112,23 +112,23 @@ const HeroSection = ({
                     <Rocket className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5 text-green-700" />
                   </div> */}
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs sm:text-sm md:text-base font-bold text-white leading-tight">10+ Years</div>
-                    <div className="text-xs text-white/80 leading-tight">Agri Experience</div>
+                    <div className="text-xs sm:text-sm md:text-base font-bold text-white leading-tight">20+ Years</div>
+                    <div className="text-xs text-white/80 leading-tight">Agri,RE Experience</div>
                   </div>
                 </div>
               </div>
 
-              <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-sm rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 sm:h-16 md:h-20">
+              {/* <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-sm rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 sm:h-16 md:h-20">
                 <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 h-full">
-                  {/* <div className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10 bg-white rounded-sm sm:rounded-md md:rounded-lg flex items-center justify-center flex-shrink-0">
+                  <div className="w-6 sm:w-8 md:w-10 h-6 sm:h-8 md:h-10 bg-white rounded-sm sm:rounded-md md:rounded-lg flex items-center justify-center flex-shrink-0">
                     <Globe className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5 text-green-700" />
-                  </div> */}
+                  </div>
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs sm:text-sm md:text-base font-bold text-white leading-tight">1000+</div>
+                    <div className="text-xs sm:text-sm md:text-base font-bold text-white leading-tight">800+</div>
                     <div className="text-xs text-white/80 leading-tight">Managed acres</div>
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <div className="w-3/5 md:w-full bg-black/30 backdrop-blur-sm rounded-md sm:rounded-lg md:rounded-xl p-2 sm:p-3 md:p-4 shadow-lg border border-white/20 hover:bg-white/20 transition-all duration-300 h-12 sm:h-16 md:h-20">
                 <div className="flex items-center gap-1.5 sm:gap-2 md:gap-3 h-full">
@@ -136,8 +136,8 @@ const HeroSection = ({
                     <BarChart3 className="w-3 sm:w-4 md:w-5 h-3 sm:h-4 md:h-5 text-green-700" />
                   </div> */}
                   <div className="flex-1 min-w-0">
-                    <div className="text-xs sm:text-sm md:text-base font-bold text-white leading-tight">Fruit Sales</div>
-                    <div className="text-xs text-white/80 leading-tight">in Q-Comm, Retail</div>
+                    <div className="text-xs sm:text-sm md:text-base font-bold text-white leading-tight">8-12%</div>
+                    <div className="text-xs text-white/80 leading-tight">Asset Growth</div>
                   </div>
                 </div>
               </div>

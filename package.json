@@ -2,10 +2,13 @@
   "name": "landing-page-react",
   "version": "1.0.0",
   "private": true,
+  "homepage": "https://yourusername.github.io/landing_page_react",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "firebase": "^12.1.0",
@@ -16,6 +19,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",
+    "gh-pages": "^6.3.0",
     "postcss": "^8.4.24",
     "tailwindcss": "^3.4.10",
     "vite": "^5.0.0"

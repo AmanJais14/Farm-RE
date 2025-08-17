@@ -104,7 +104,7 @@ const InvestmentOverview = () => {
 
                 <div className="relative flex items-center gap-2">
                   <CheckCircle className="w-4 h-4 text-green-500" />
-                  <span className="font-bold text-emerald-600 text-sm">IIM Alumni</span>
+                  <span className="font-bold text-emerald-600 text-xs">Farmties,IIM Team</span>
                   {/* Premium badge */}
                   {/* <div className="bg-gradient-to-r from-emerald-500 to-green-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-md">
                     PREMIUM
