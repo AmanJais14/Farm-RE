@@ -2,7 +2,7 @@
   "name": "landing-page-react",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://yourusername.github.io/landing_page_react",
+  "homepage": "https://AmanJais14.github.io/landing_page_react",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -18,6 +18,7 @@
     "react-router-dom": "^7.8.1"
   },
   "devDependencies": {
+    "@vitejs/plugin-react": "^4.2.1",
     "autoprefixer": "^10.4.14",
     "gh-pages": "^6.3.0",
     "postcss": "^8.4.24",
