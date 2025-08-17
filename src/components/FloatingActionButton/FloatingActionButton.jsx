@@ -3,11 +3,11 @@ import { Phone } from 'lucide-react';
 
 const FloatingActionButton = ({ activeCard, setActiveCard }) => {
   return (
-    <div className="fixed bottom-8 right-8 z-50">
+    <div className="fixed bottom-8  right-8 z-50">
       <div className="relative group">
         {/* Main FAB */}
         <button
-          className="w-16 h-16 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group relative overflow-hidden"
+          className="w-14 h-14 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 flex items-center justify-center group relative overflow-hidden"
           onMouseEnter={() => setActiveCard('fab')}
           onMouseLeave={() => setActiveCard(null)}
           onClick={() => {

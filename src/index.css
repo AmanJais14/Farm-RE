@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://db.onlinewebfonts.com/c/157c6cc36dd65b1b2adc9e7f3329c761?family=Samsung+Sharp+Sans');
 
 @tailwind base;
 @tailwind components;
@@ -22,8 +23,8 @@ html, body, #root {
 }
 
 body {
-  font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
-    Roboto, 'Helvetica Neue', 'Noto Sans', 'Arial', 'sans-serif';
+  font-family: 'Samsung Sharp Sans', 'Roboto', ui-sans-serif, system-ui, -apple-system, 'Segoe UI',
+    'Helvetica Neue', 'Noto Sans', 'Arial', 'sans-serif';
   font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
   scroll-behavior: smooth;
 }

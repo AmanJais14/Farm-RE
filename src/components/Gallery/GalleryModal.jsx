@@ -29,19 +29,27 @@ const GalleryModal = ({
         <span className="text-white/70">{galleryImages.length}</span>
       </div>
 
-      {/* Main image */}
+      {/* Main media */}
       <div className="relative max-w-6xl max-h-[80vh] w-full">
-        <img
-          src={galleryImages[currentImageIndex].src}
-          alt={galleryImages[currentImageIndex].title}
-          className="w-full h-full object-contain rounded-2xl shadow-premium"
-        />
+        {galleryImages[currentImageIndex].type === "video" ? (
+          <video
+            src={galleryImages[currentImageIndex].src}
+            className="w-full h-full object-contain rounded-2xl shadow-premium"
+            controls
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
+        ) : (
+          <img
+            src={galleryImages[currentImageIndex].src}
+            alt={galleryImages[currentImageIndex].title}
+            className="w-full h-full object-contain rounded-2xl shadow-premium"
+          />
+        )}
 
-        {/* Image info overlay */}
-        <div className="absolute bottom-6 left-6 right-6 glass p-6 rounded-2xl border border-white/20">
-          <h3 className="text-2xl font-bold text-white mb-2">{galleryImages[currentImageIndex].title}</h3>
-          <p className="text-white/90">{galleryImages[currentImageIndex].description}</p>
-        </div>
+
 
         {/* Navigation arrows */}
         <button
@@ -60,25 +68,40 @@ const GalleryModal = ({
       </div>
 
       {/* Thumbnail strip */}
-      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3">
-        {galleryImages.map((image, index) => (
+      {/* <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex gap-3">
+        {galleryImages.map((media, index) => (
           <button
             key={index}
             onClick={() => setCurrentImageIndex(index)}
-            className={`w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
+            className={`relative w-16 h-16 rounded-lg overflow-hidden transition-all duration-300 ${
               currentImageIndex === index
                 ? 'ring-2 ring-white scale-110'
                 : 'opacity-60 hover:opacity-100 hover:scale-105'
             }`}
           >
-            <img
-              src={image.src}
-              alt={image.title}
-              className="w-full h-full object-cover"
-            />
+            {media.type === "video" ? (
+              <video
+                src={media.src}
+                className="w-full h-full object-cover"
+                muted
+              />
+            ) : (
+              <img
+                src={media.src}
+                alt={media.title}
+                className="w-full h-full object-cover"
+              />
+            )}
+            {media.type === "video" && (
+              <div className="absolute inset-0 flex items-center justify-center">
+                <div className="w-4 h-4 bg-white/80 rounded-full flex items-center justify-center">
+                  <div className="w-0 h-0 border-l-[6px] border-l-black border-y-[3px] border-y-transparent ml-0.5"></div>
+                </div>
+              </div>
+            )}
           </button>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

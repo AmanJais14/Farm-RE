@@ -14,7 +14,7 @@ const AboutMe = () => {
       expertise: "Partner at Perfect Neighbourhood",
       image: `${Sunil}`,
       education: "IIM Ahmedabad, B.Tech Agriculture",
-      experience: "12+ years in AgriTech",
+      experience: "10+ years in Real Estate",
       specialization: "Precision farming and crop optimization",
       achievements: ["Led 50+ successful farm projects", "Expert in sustainable agriculture", "Technology integration specialist"]
     },
@@ -24,24 +24,24 @@ const AboutMe = () => {
       expertise: "Founder at Farmties India Pvt Ltd, IIM Mumbai",
       image: `${Nagendra}`,
       education: "IIM Bangalore, CA, CFA",
-      experience: "10+ years in Investment Banking",
+      experience: "10+ years in Agriculture",
       specialization: "Agricultural finance and risk management",
       achievements: ["Managed ₹500Cr+ agricultural investments", "Financial modeling expert", "Risk assessment specialist"]
     },
-    {
-      id: 3,
-      name: "Mr. Priyesh Jaiswal",
-      expertise: "Advisor, IIM Mumbai",
-      image: `${Priyesh}`,
-      education: "IIM Calcutta, M.Sc. Agriculture",
-      experience: "15+ years in Farm Operations",
-      specialization: "Large-scale farm management and operations",
-      achievements: ["Managed 1000+ acres farmland", "Crop yield optimization expert", "Supply chain management"]
-    }
+    // {
+    //   id: 3,
+    //   name: "Mr. Priyesh Jaiswal",
+    //   expertise: "Advisor, IIM Mumbai",
+    //   image: `${Priyesh}`,
+    //   education: "IIM Calcutta, M.Sc. Agriculture",
+    //   experience: "15+ years in Farm Operations",
+    //   specialization: "Large-scale farm management and operations",
+    //   achievements: ["Managed 1000+ acres farmland", "Crop yield optimization expert", "Supply chain management"]
+    // }
   ];
 
   return (
-    <section className="py-16 bg-gradient-to-br from-white via-green-50 to-emerald-50 relative overflow-hidden -mt-1">
+    <section className="py-8 sm:py-12 md:py-16 bg-gradient-to-br from-white via-green-50 to-emerald-50 relative overflow-hidden -mt-1">
       {/* Natural transition */}
       <div className="absolute top-0 left-0 w-full h-20 bg-gradient-to-b from-emerald-50 to-transparent"></div>
 
@@ -53,26 +53,26 @@ const AboutMe = () => {
       <div className="container mx-auto px-6 relative">
         <div className="max-w-7xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-3xl md:text-4xl font-black text-green-900 mb-4">
+          <div className="text-center mb-8 animate-fade-in">
+            <h2 className="text-xl md:text-2xl font-black text-green-900 mb-2">
               Who <span className="gradient-text">are We</span>
             </h2>
-            <p className="text-base text-black max-w-2xl mx-auto leading-relaxed">
-              Our leadership team combines decades of experience in agriculture, finance, and technology to deliver exceptional investment opportunities.
+            <p className="text-xs sm:text-sm text-black max-w-2xl mx-auto leading-relaxed">
+              Our leadership blends decades of expertise in agriculture & real estate to deliver exceptional investments.
             </p>
           </div>
 
           {/* Founders Grid */}
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
+          <div className="grid md:grid-cols-2 gap-8 lg:gap-12 max-w-5xl mx-auto">
             {founders.map((founder, index) => (
               <div
                 key={founder.id}
-                className="group bg-gradient-to-br from-white/90 to-green-50/90 backdrop-blur-sm rounded-3xl shadow-lg border border-green-200/50 hover:shadow-xl transition-all duration-300 hover:scale-105 p-8 text-center animate-scale-in"
+                className="group rounded-3xl shadow-lg border border-green-200/50 hover:shadow-xl transition-all duration-300 hover:scale-105 p-6 text-center animate-scale-in"
                 style={{ animationDelay: `${index * 200}ms` }}
               >
                 {/* Founder Image */}
-                <div className="relative mb-6">
-                  <div className="relative w-32 h-32 mx-auto">
+                <div className="relative mb-4">
+                  <div className="relative w-24 h-24 mx-auto">
                     <div className="w-full h-full rounded-full shadow-lg border border-green-200/50 relative overflow-hidden group-hover:scale-110 transition-transform duration-300">
                       {/* Actual founder image */}
                       <img
@@ -97,11 +97,14 @@ const AboutMe = () => {
                 </div>
 
                 {/* Founder Info */}
-                <div className="mb-6">
-                  <h3 className="text-xl font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300">
+                <div className="mb-4">
+                  <h3 className="text-base font-bold text-black mb-2 group-hover:text-gray-700 transition-colors duration-300">
                     {founder.name}
                   </h3>
-                  <p className="text-black font-medium text-sm mb-4">
+                  <p className="text-xs font-normal text-green-700  group-hover:text-green-600 transition-colors duration-300">
+                    {founder.experience}
+                  </p>
+                  <p className="text-black font-medium text-xs mb-2">
                     {founder.expertise}
                   </p>
                   {/* <p className="text-green-700 text-sm leading-relaxed">

@@ -1,5 +1,6 @@
 import React from 'react';
 import InvestmentLandscape from '../InvestmentLandscape/InvestmentLandscape';
+import CAGRGrowth from '../CAGRGrowth/CAGRGrowth';
 import InvestmentOverview from '../InvestmentOverview/InvestmentOverview';
 import PricingComparison from '../PricingComparison/PricingComparison';
 
@@ -28,6 +29,9 @@ const CollapsibleSections = ({ activeCard, setActiveCard, counters }) => {
           setActiveCard={setActiveCard}
         />
 
+        {/* CAGR Growth Section */}
+        <CAGRGrowth />
+
         {/* Investment Overview Section */}
         <InvestmentOverview
           activeCard={activeCard}
@@ -36,10 +40,10 @@ const CollapsibleSections = ({ activeCard, setActiveCard, counters }) => {
         />
 
         {/* Pricing Comparison Section */}
-        <PricingComparison
+        {/* <PricingComparison
           activeCard={activeCard}
           setActiveCard={setActiveCard}
-        />
+        /> */}
       </div>
     </div>
   );
